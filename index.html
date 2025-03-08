@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopMate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="main-content">
+    <header class="nav">
+        <div class="logo"><a href="#" onclick="showMain()">ShopMate</a></div>
+        <div class="search">
+            <input type="text" id="search-box" placeholder="Search for products..."/>
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="user">
+            <a href="#" id="login-btn">Sign In</a>
+            <a href="#" id="register-btn">Register</a>
+            <a href="#" id="cart-btn">Cart (0)</a>
+        </div>
+    </header>
+
+    <section class="carousel">
+        <div class="slide active">
+            <img src="offer1.png" alt="Offer 1">
+            <p>Up to 50% off on selected items!</p>
+        </div>
+        <div class="slide">
+            <img src="offer2.avif" alt="Offer 2">
+            <p>Buy 1 Get 1 Free on all accessories!</p>
+        </div>
+        <div class="slide">
+            <img src="offer3.jpg" alt="Offer 3">
+            <p>Special discounts on electronics this weekend!</p>
+        </div>
+        <div class="slide">
+            <img src="offer4.jpeg" alt="Offer 4">
+            <p>Free shipping on orders over $50!</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Recommended Products</h2>
+        <div id="product-list"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+        <p>&copy; 2025 ShopMate. All rights reserved.</p>
+    </footer>
+</div>
+
+<div id="auth-cart-section"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

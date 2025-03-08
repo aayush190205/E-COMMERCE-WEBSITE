@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslateblue;
+    color: white;
+    padding: 15px;
+}
+
+.logo a {
+    font-size: 22px;
+    font-weight: bold;
+    color: lightgoldenrodyellow;
+    cursor: pointer;
+}
+
+.search input {
+    padding: 8px;
+    width: 350px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 8px;
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user a {
+    margin-left: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px; 
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slide img {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.slide.active {
+    display: block;
+}
+
+.products {
+    padding: 20px;
+}
+
+.product-card {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.footer {
+    background-color: darkslateblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.auth-box {
+    padding: 30px;
+    background: white;
+    box-shadow: 0 0 8px gray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-container {
+    text-align: center;
+    padding: 40px;
+}
+
+#cart-items {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+}
